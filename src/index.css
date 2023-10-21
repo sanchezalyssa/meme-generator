@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.container {
+    padding: 40px;
+}
+header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #672280;
+}
+header h3 {
+    font-size: 1.3em;
+}
+header img {
+    height: 26.22px;
+    width: 31.31px;
+    margin-right: 10px;
+}
+header h5 {
+    margin-left: auto;
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 50px;
+}
+main {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.memeText {
+    width: 80%;
+    position: absolute;
+    word-break: break-all;
+    text-align: center;
+    left: 50%; /* make the text center */
+    transform: translateX(-50%); /* make the text center */
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+@media (max-width: 450px) {
+    body {
+        font-size: 12px;
+    }
+    .memeText {
+        font-size: 14px;
+    }
+}
+.top {
+    top: 180px;
+}
+.bottom {
+    bottom: 50px;
+}
+.form-inputs {
+    display: flex;
+    gap: 20px;
+}
+.form input {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #d5d4d8;
+}
+
+.form button,
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    background-color: #672280;
+    color: white;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: #8d27b3;
+}
+.meme-image {
+    width: 100%;
+    margin-top: 20px;
+}
